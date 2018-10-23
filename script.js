@@ -21,7 +21,7 @@ class Stopwatch {
 	}
 
 	format(times) {
-		return `${pad0(times.minutes)}:${pad0(times.seconds)}:${pad0(Match.floor(times.miliseconds))}`;
+		return `${pad0(times.minutes)}:${pad0(times.seconds)}:${pad0(Math.floor(times.miliseconds))}`;
 	
 		function pad0(value) {
 	    	let result = value.toString();

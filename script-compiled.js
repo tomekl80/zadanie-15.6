@@ -31,7 +31,7 @@ var Stopwatch = function () {
 	}, {
 		key: 'format',
 		value: function format(times) {
-			return pad0(times.minutes) + ':' + pad0(times.seconds) + ':' + pad0(Match.floor(times.miliseconds));
+			return pad0(times.minutes) + ':' + pad0(times.seconds) + ':' + pad0(Math.floor(times.miliseconds));
 
 			function pad0(value) {
 				var result = value.toString();
