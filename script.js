@@ -47,7 +47,7 @@ class Stopwatch {
 
 	calculate() {
 		this.times.miliseconds += 1;
-		if (this.miliseconds >= 100) {
+		if (this.times.miliseconds >= 100) {
 			this.times.seconds += 1;
 			this.times.miliseconds = 0;
 		}
